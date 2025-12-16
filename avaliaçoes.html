@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marjorms - avaliações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="avaliacoes.css"> 
+    <style>
+    .superior {
+    background-color: #000000;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    position: fixed; 
+    top: 0;          
+    left: 0;
+}
+
+
+.navegação {
+    height: 100%;
+    width: 100%;
+}
+
+.navegação ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.menu {
+    display: block;
+    padding: 0 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.menu:hover {
+    color: #bfa980;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="superior">
+        <div class="navegação">
+            <ul>
+                <li><a href="index.html" class="menu">cardapio</a></li>
+                <li><a href="reserva.html" class="menu">reserva</a></li>
+                <li><a href="sobre.html" class="menu">sobre</a></li>
+                <li><a href="avaliaçoes.html" class="menu">avaliações</a></li>
+                <li><a href="loc.html" class="menu">local</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <main class="avaliacoes-container">
+        <h2 class="titulo">O Que Dizem Nossos Clientes</h2>
+
+        <div class="reviews-grid">
+            
+            <article class="review-card">
+                <div class="review-header">
+                    <span class="review-name">Fernanda L.</span>
+                    <div class="review-stars">★★★★★</div>
+                </div>
+                <p class="review-text">"Experiência incrível! A Bruschetta Italiana estava impecável e o atendimento foi de primeira. Um ambiente elegante e acolhedor. Com certeza voltaremos!"</p>
+                <span class="review-date">Postado em 05/12/2025</span>
+            </article>
+
+            <article class="review-card">
+                <div class="review-header">
+                    <span class="review-name">Ricardo M.</span>
+                    <div class="review-stars">★★★★☆</div>
+                </div>
+                <p class="review-text">"O Ceviche é o melhor que já provei na cidade. Perfeito o tempero e a frescura dos ingredientes. O único ponto é que a espera foi um pouco longa."</p>
+                <span class="review-date">Postado em 01/12/2025</span>
+            </article>
+
+            <article class="review-card">
+                <div class="review-header">
+                    <span class="review-name">Patrícia S.</span>
+                    <div class="review-stars">★★★★★</div>
+                </div>
+                <p class="review-text">"Simplesmente maravilhoso! A Burrata é obrigatória. O ambiente é perfeito para um jantar romântico. Nota 10 em todos os aspectos."</p>
+                <span class="review-date">Postado em 28/11/2025</span>
+            </article>
+
+            <article class="review-card">
+                <div class="review-header">
+                    <span class="review-name">Lucas K.</span>
+                    <div class="review-stars">★★★★☆</div>
+                </div>
+                <p class="review-text">"Os Canapés são criativos e deliciosos. A carta de vinhos é excelente. A equipe foi muito atenciosa. Recomendo para quem busca uma culinária refinada."</p>
+                <span class="review-date">Postado em 20/11/2025</span>
+            </article>
+
+            <article class="review-card">
+                <div class="review-header">
+                    <span class="review-name">Mariana B.</span>
+                    <div class="review-stars">★★★★★</div>
+                </div>
+                <p class="review-text">"Desde a reserva até a sobremesa, tudo foi impecável. A comida é de altíssima qualidade e o serviço é rápido. Me senti muito bem acolhida. Voltarei em breve!"</p>
+                <span class="review-date">Postado em 15/11/2025</span>
+            </article>
+
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 marjorm´s. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+</html>

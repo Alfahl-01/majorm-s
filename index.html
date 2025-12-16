@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marjorms - entradas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cardapio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="container">
+        <div class="lateral">
+            <div class="logo-container">
+                <img class="logo" src="imagem/logo.jpeg" alt="Logo">
+            </div>
+            <div class="lateral-bt">
+                <ul>
+                    <li class="troca1"><a href="comida.html" style="display: block; height: 100%;"></a></li>
+                    <li class="troca2"><a href="bebida.html" style="display: block; height: 100%;"></a></li>
+                    <li class="troca3"><a href="principais.html" style="display: block; height: 100%;"></a></li>
+                    <li class="troca4"><a href="sobremesas.html" style="display: block; height: 100%;"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="geral">
+            <div class="superior">
+                <div class="navegação">
+                    <ul>
+                        <li><a href="index.html" class="menu">cardapio</a></li>
+                        <li><a href="reserva.html" class="menu">reserva</a></li>
+                        <li><a href="sobre.html" class="menu">sobre</a></li>
+                        <li><a href="avaliaçoes.html" class="menu">avaliações</a></li>
+                        <li><a href="loc.html" class="menu">local</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="image-area">
+                <h1 class="main-text">Surpreenda-se</h1>
+                <h1 class="main-text2">entradas</h1>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="nome">marjomi´s <span>restaurant</span></div>
+            <div class="carrin">
+                🛒 Carrinho <span class="carro">0</span>
+            </div>
+        </nav>
+        <div id="carrinho-modal" class="modal">
+            <div id="carrinho-conteudo" class="modal-content">
+                <h3>Seu Carrinho</h3>
+                <ul id="itens-carrinho-lista">
+                </ul>
+
+                <div class="frete-container">
+                    <label for="select-pais">Selecione o País de Destino:</label>
+                    <select id="select-pais">
+                        <option value="Espanha">Espanha (Local)</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="França">França</option>
+                        <option value="Alemanha">Alemanha</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                    </select>
+                    <p id="frete-valor">Frete: R$ 0,00</p>
+                </div>
+        
+                <div id="carrinho-total-div">
+                    Total: <span id="carrinho-valor-total">R$ 0,00</span>
+                </div>
+                
+                <button id="btn-finalizar-compra" class="btn-primary" style="width: 100%; margin-top: 20px;">
+                    Finalizar Compra
+                </button>
+        
+                <button onclick="fecharModal()" style="width: 100%; margin-top: 10px; background-color: #ccc;">
+                    Continuar Comprando
+                </button>
+            </div>
+        </div>
+
+    </header>
+ 
+    <main class="menu-container">
+        <h2 class="titulo">Nosso Cardápio</h2>
+
+        <div class="menu-grid">
+            
+            <article class="card">
+                <img src="https://www.divvino.com.br/blog/wp-content/uploads/2024/03/receitas-de-bruschettas-capa.jpg" alt="Hambúrguer Artesanal" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Bruschetta italiana</h3>
+                    <p class="cardD">Um clássico antepasto feito com fatias de pão italiano tostado, esfregadas com alho e regadas com azeite, finalizadas com uma mistura fresca de tomate e manjericão.</p>
+                    <div class="cardG">
+                        <span class="money">R$ 420,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://www.estadao.com.br/resizer/5rlUaRuuY1NjqxwEW37yYmEpOzg=/arc-anglerfish-arc2-prod-estadao/public/5RDF2MDCU5DOBA2SRBEXUT4HLI.jpeg" alt="Ceviche" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT"> Ceviche </h3>
+                    <p class="cardD"> Um prato tradicional sul-americano, especialmente peruano, que consiste em frutos do mar crus marinados em suco cítrico, com lima.</p>
+                    <div class="cardG">
+                        <span class="money">R$ 380,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://amordesalgados.com.br/wp-content/uploads/2018/05/canape-salmao-1.jpg" alt="Canapés" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT"> Canapés </h3>
+                    <p class="cardD">Aperitivos pequenos com frios compostos por uma base crocante feita de massa folhada  e uma cobertura saborosa (patês, queijos, carnes, legumes ou frutas). </p>
+                    <div class="cardG">
+                        <span class="money">R$ 515,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img alt="Canapés" class="card-image" src="https://cms-bomgourmet.s3.amazonaws.com/bomgourmet/2024/06/03114417/bigstock-Artigiana-Burrata-Salad-Herb-M-308678191-scaled.jpg">
+                <div class="cardV">
+                    <h3 class="cardT">Burrata </h3>
+                    <p class="cardD">um queijo fresco italiano, originário da Puglia, com casca de mussarela e um interior macio e cremoso de creme de leite e pedaços de mussarela (stracciatella), cujo nome vem de "burro" (manteiga) pela sua textura amanteigada; servida com tomate, azeite, manjericão e com presunto cru e pães.</p>
+                    <div class="cardG">
+                        <span class="money">R$ 430,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img alt="Canapés" class="card-image" src="https://www.mareriopescados.com.br/uploads/receitas/4892bc000f0278234a2a46373cf144a5.jpg">
+                <div class="cardV">
+                    <h3 class="cardT">Vieiras Seladas</h3>
+                    <p class="cardD">Vieiras frescas seladas em manteiga e vinho branco. Servidas com um toque de espuma de alho-poró e caviar de limão para uma explosão de sabor.</p>
+                    <div class="cardG">
+                        <span class="money">R$ 330,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img alt="Canapés" class="card-image" src="https://www.prazeresdamesa.com.br/wp-content/uploads/2019/01/DAN_9036.jpg">
+                <div class="cardV">
+                    <h3 class="cardT">Polvo Grelhado</h3>
+                    <p class="cardD">Tentáculos de polvo cozidos lentamente e grelhados com páprica defumada e alho. Servido sobre um purê de batata doce e azeite extra virgem.</p>
+                    <div class="cardG">
+                        <span class="money">R$ 527,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 marjorm´s. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="maioria.js">   </script>
+    
+</body>
+</html>

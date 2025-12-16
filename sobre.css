@@ -1,0 +1,144 @@
+
+:root {
+    --gold: #eba524;
+    --dark-bg: #0f0f0f;
+    --card-bg: #1a1a1a;
+    --text-main: #eba524;
+    --text-muted: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-main);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+}
+
+h1, h2, h3, .logo {
+     font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200px;
+}
+
+
+header {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#imglogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.about-intro {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.about-intro h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--gold);
+    margin: 0 auto 30px auto;
+}
+
+.lead-text {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.about-intro p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+
+.founders-section {
+    background-color: #141414;
+    padding: 80px 5%;
+}
+
+.founders-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.founder-card {
+    background-color: var(--card-bg);
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold);
+}
+
+.photo-frame {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    padding: 3px; 
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(40%); 
+    transition: filter 0.3s;
+}
+
+.founder-card:hover .photo-frame img {
+    filter: grayscale(0%); 
+}
+
+.founder-card h3 {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+

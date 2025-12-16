@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marjorms - bebidas</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="cardapio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="lateral">
+            <div class="logo-container">
+                <img class="logo" src="imagem/logo.jpeg" alt="Logo">
+            </div>
+            <div class="lateral-bt">
+                <ul>
+                    <li class="troca1"><a href="index.html" style="display: block; height: 100%;"></a></li>
+                    <li class="troca2"><a href="bebida.html" style="display: block; height: 100%;"></a></li>
+                    <li class="troca3"><a href="principais.html"  style="display: block; height: 100%;"></a></li>
+                    <li class="troca4"><a href="sobremesas.html" style="display: block; height: 100%;"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="geral">
+            <div class="superior">
+                <div class="navegação">
+                    <ul>
+                        <li><a href="index.html" class="menu">cardapio</a></li>
+                        <li><a href="reserva.html" class="menu">reserva</a></li>
+                        <li><a href="sobre.html" class="menu">sobre</a></li>
+                        <li><a href="avaliaçoes.html" class="menu">avalições</a></li>
+                        <li><a href="loc.html" class="menu">local</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="image-area">
+                <h1 class="main-text">Surpreenda-se</h1>
+                <h1 class="main-text2">bebida</h1>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="nome">marjomi´s <span>restaurant</span></div>
+            <div class="carrin">
+                🛒 Carrinho <span class="carro">0</span>
+            </div>
+        </nav>
+        
+        <div id="carrinho-modal" class="modal">
+            <div id="carrinho-conteudo" class="modal-content">
+                <h3>Seu Carrinho</h3>
+                <ul id="itens-carrinho-lista">
+                </ul>
+
+                <div class="frete-container">
+                    <label for="select-pais">Selecione o País de Destino:</label>
+                    <select id="select-pais">
+                        <option value="Espanha">Espanha (Local)</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="França">França</option>
+                        <option value="Alemanha">Alemanha</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                    </select>
+                    <p id="frete-valor">Frete: R$ 0,00</p>
+                </div>
+        
+                <div id="carrinho-total-div">
+                    Total: <span id="carrinho-valor-total">R$ 0,00</span>
+                </div>
+                
+                <button id="btn-finalizar-compra" class="btn-primary" style="width: 100%; margin-top: 20px;">
+                    Finalizar Compra
+                </button>
+        
+                <button onclick="fecharModal()" style="width: 100%; margin-top: 10px; background-color: #ccc;">
+                    Continuar Comprando
+                </button>
+            </div>
+        </div>
+
+    </header>
+ 
+    <main class="menu-container">
+        <h2 class="titulo">Nosso Cardápio</h2>
+
+        <div class="menu-grid">
+            
+             <article class="card">
+                <img src="https://blog.estreladolar.com.br/wp-content/uploads/2025/02/aguasaborizada-scaled.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Água saborizada - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 90,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+                <article class="card">
+                <img src="https://cdn.awsli.com.br/2610/2610989/produto/233534084/guarana-antarctica-pet-original-1l-ye8rcuexmh.png" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Guaraná - 1L</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 100,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+             </div>
+            </article>
+
+           <article class="card">
+                <img src="https://arrumadinho.menuuipages.com/_core/_uploads/168/2024/03/0938060324ai47f615id.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Coca cola - 1L</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 100,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://altoastral.joaobidu.com.br/wp-content/uploads/2023/09/beneficios-agua-coco.jpg" alt="Bedida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Água de Coco - 250ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 120,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+             <article class="card">
+                <img src="https://www.samsclub.com.br/blog/wp-content/uploads/2024/01/Vidro-do-suco-de-laranja-colocado-num-copo-sobre-madeira.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Suco de Laranja natural - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 100,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+             <article class="card">
+                <img src="https://phygital-files.mercafacil.com/comercial-nunes-peixoto/uploads/produto/refrigerante_sukita_laranja_1l_21406281-6529-49d1-a2ca-4ada85088dee.jpeg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Sukita - 1L</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 80,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+              <article class="card">
+                <img src="https://osaboroso.com.br/wp-content/uploads/2023/09/laranja.colageno_Dsaude-3.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Suco de Morango natural - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 100,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+             <article class="card">
+                <img src="https://d16w7cuzwgzfcy.cloudfront.net/Custom/Content/Products/19/04/190480_bebida-sprite-1-litro-p564805_m2_638957694499028128.webp" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Sprite - 1L</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 90,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://receitadaboa.com.br/wp-content/uploads/2024/12/suco-de-manga.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Suco de Manga natural - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 100,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+               <article class="card">
+                <img src="https://i3-imagens-prd.araujo.com.br/redimensionada/380x380/52236/203550_7894900700015_4.webp" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Coca cola - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 78,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://marmitexdesucesso.com.br/wp-content/uploads/2025/05/Como-fazer-suco-de-maracuja-sem-liquidificador.jpg" alt="bebida " class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Suco de Maracuja natural - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 100,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+              <article class="card">
+                <img src="https://pipocao.agilecdn.com.br/15345_1.jpg?v=427-2056714684" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Guaraná - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 78,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+             <article class="card">
+                <img src="https://http2.mlstatic.com/D_Q_NP_667407-MLU73329509268_122023-O.webp" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Suco de Goiaba natural - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 100,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+              <article class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZY5qCucWWuBu4y0i7FRn-xR-fORc9fOOS-g&s" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Suco de Acerola natural - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 100,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+              <article class="card">
+                <img src="https://s3-sa-east-1.amazonaws.com/deliveryon-uploads/products/bobs/38_5ea4748c11d7d.jpeg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Sprite - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 78,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+              <article class="card">
+                <img src="https://espaconatelie.com.br/wp-content/uploads/2024/11/suco-de-abacaxi-cremoso.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Suco de Abacaxi natural - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 100,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+             <article class="card">
+                <img src="https://bonsdrinks.com.br/wp-content/uploads/2023/08/blue-hawaiian-drink.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Havaiano - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 180,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+               <article class="card">
+                <img src="https://img.freepik.com/foto-gratis/delicioso-coctel-daiquiri-lima_23-2149412419.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Daiquiri - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 115,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+               <article class="card">
+                <img src="https://cadareceita.com.br/wp-content/uploads/2020/08/mojito-feepik.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Mojito - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 120,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="card">
+                <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/A9467000-4182-4A69-802E-6A36234604C1/Derivates/9cca3d9b-727b-4d23-b633-71dcd23125da.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Piña Colada - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 190,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://bevvyco.s3.amazonaws.com/img/drinks/ta/cmta/zombie-15bb0f86eafc13f9684c86022d4704e8-lg.jpg" alt="bebida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Zombie - 350ml</h3>
+                    <div class="cardG">
+                        <span class="money">R$ 400,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 marjorm´s. Todos os direitos reservados.</p>
+    </footer>
+    <script src="maioria.js"> </script>
+
+</body>
+</html>

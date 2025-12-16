@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marjorms - pratos principais</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="cardapio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="container">
+        <div class="lateral">
+            <div class="logo-container">
+                <img class="logo" src="imagem/logo.jpeg" alt="Logo">
+            </div>
+            <div class="lateral-bt">
+                <ul>
+                    <li class="troca1"><a href="index.html" style="display: block; height: 100%;"></a></li>
+                    <li class="troca2"><a href="bebida.html" style="display: block; height: 100%;"></a></li>
+                    <li class="troca3"><a href="principais.html" style="display: block; height: 100%;"></a></li>
+                    <li class="troca4"><a href="sobremesas.html" style="display: block; height: 100%;"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="geral">
+            <div class="superior">
+                <div class="navegação">
+                    <ul>
+                        <li><a href="index.html" class="menu">cardapio</a></li>
+                        <li><a href="reserva.html" class="menu">reserva</a></li>
+                        <li><a href="sobre.html" class="menu">sobre</a></li>
+                        <li><a href="avaliaçoes.html" class="menu">avaliações</a></li>
+                        <li><a href="loc.html" class="menu">local</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="image-area">
+                <h1 class="main-text">Surpreenda-se</h1>
+                <h1 class="main-text2">pratos principais</h1>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="nome">marjomi´s <span>restaurant</span></div>
+            <div class="carrin">
+                🛒 Carrinho <span class="carro">0</span>
+            </div>
+        </nav>
+
+        <div id="carrinho-modal" class="modal">
+            <div id="carrinho-conteudo" class="modal-content">
+                <h3>Seu Carrinho</h3>
+                <ul id="itens-carrinho-lista">
+                </ul>
+
+                <div class="frete-container">
+                    <label for="select-pais">Selecione o País de Destino:</label>
+                    <select id="select-pais">
+                        <option value="Espanha">Espanha (Local)</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="França">França</option>
+                        <option value="Alemanha">Alemanha</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                    </select>
+                    <p id="frete-valor">Frete: R$ 0,00</p>
+                </div>
+        
+                <div id="carrinho-total-div">
+                    Total: <span id="carrinho-valor-total">R$ 0,00</span>
+                </div>
+                
+                <button id="btn-finalizar-compra" class="btn-primary" style="width: 100%; margin-top: 20px;">
+                    Finalizar Compra
+                </button>
+        
+                <button onclick="fecharModal()" style="width: 100%; margin-top: 10px; background-color: #ccc;">
+                    Continuar Comprando
+                </button>
+            </div>
+        </div>
+        
+    </header>
+ 
+    <main class="menu-container">
+        <h2 class="titulo">Nosso Cardápio</h2>
+
+        <div class="menu-grid">
+            
+            <article class="card">
+                <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3233443:1653062109/Risoto%20de%20camar%C3%A3o.jpg?f=4x3&$p$f=a526b49" alt=" " class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Risoto de Camaão</h3>
+                    <p class="cardD">um prato clássico e saboroso feito com arroz arbóreo, um caldo de camarão e a técnica de mexer constantemente para liberar o amido, garantindo a cremosidade. </p>
+                    <div class="cardG">
+                        <span class="money">R$ 410,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://canaldareceita.com.br/wp-content/uploads/2024/12/FILE-MIGNON-NO-FORNO.jpg" alt="comida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT"> Filé mignon</h3>
+                    <p class="cardD">  O corte mais nobre e macio da carne bovina, retirado da parte traseira do lombo, com baixo teor de gordura e sabor suave acomponhado de batatas assadas ao toque de azeite.</p>
+                    <div class="cardG">
+                        <span class="money">R$ 780,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://receitadaboa.com.br/wp-content/uploads/2024/08/salmao-grelhado-com-pure-de-batata-e-salada-fresca.jpg" alt="Comida" class="card-image">
+                <div class="cardV">
+                    <h3 class="cardT">Salmão grelhado </h3>
+                    <p class="cardD">um salmão grelhado suculento e saboroso, de pele crocante e o interior macio.  </p>
+                    <div class="cardG">
+                        <span class="money">R$ 500,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img  alt="Comida" class="card-image" src="https://media.istockphoto.com/id/1456242985/pt/foto/barbecue-grilled-and-sliced-wagyu-rib-eye-beef-meat-steak-on-a-plate-dark-background-top-view.jpg?s=612x612&w=0&k=20&c=OEbqdCbV00L4c1cPO7-FAGut-6ogv9UKLjbAo20qpEY=">
+                <div class="cardV">
+                    <h3 class="cardT">Burrata </h3>
+                    <p class="cardD">uma das carnes bovinas mais caras e apreciadas do mundo, famosa por sua extrema maciez, suculência e sabor amanteigado.</p>
+                    <div class="cardG">
+                        <span class="money">R$ 960,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img  alt="Comida" class="card-image" src="https://www.divinho.com.br/blog/wp-content/uploads/2021/07/Cordeiro-Vinho.jpg">
+                <div class="cardV">
+                    <h3 class="cardT">Cordeiro ao Vinho</h3>
+                    <p class="cardD">Perna de cordeiro assada lentamente, garantindo maciez e suculência. Acompanha um rico molho de redução de vinho tinto e purê de batata trufado.</p>
+                    <div class="cardG">
+                        <span class="money">R$ 730,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img  alt="Comida" class="card-image" src="https://media-cdn.tripadvisor.com/media/photo-s/13/6a/ff/79/bife-ancho-com-papas.jpg">
+                <div class="cardV">
+                    <h3 class="cardT">Bife Ancho Premium</h3>
+                    <p class="cardD">Corte premium de bife ancho grelhado (ponto a escolher), acompanhado pelo tradicional molho chimichurri argentino e batatas rústicas assadas com alecrim.</p>
+                    <div class="cardG">
+                        <span class="money">R$ 730,00</span>
+                        <button class="btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 marjorm´s. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="maioria.js">   </script>
+    
+</body>
+</html>
