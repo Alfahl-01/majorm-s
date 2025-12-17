@@ -9,30 +9,30 @@ let carrinho = [];
         const btnAbrirCarrinho = document.querySelector('.carrin');
         const btnFinalizarCompra = document.getElementById('btn-finalizar-compra'); 
 
-        // NOVO: Referências aos elementos de Frete
+        
         const selectPais = document.getElementById('select-pais');
         const freteValorDisplay = document.getElementById('frete-valor');
         
-        // Dados do restaurante (Madrid, Espanha)
+        
         const RESTAURANTE_PAIS = "Espanha";
 
-        // Valores de frete (em Reais, R$)
+        
         const FRETE_VALORES = {
-            "Espanha": 25.00, // Frete Local (Madrid)
+            "Espanha": 25.00, 
             "Portugal": 80.00,
             "França": 95.00,
             "Alemanha": 105.00,
             "Estados Unidos": 150.00,
-            "Brasil": 180.00 // Frete para o Brasil
+            "Brasil": 180.00 
         };
 
 
         function getValorFrete(pais) {
-            // Se o carrinho estiver vazio, o frete é 0
+            
             if (carrinho.length === 0) {
                 return 0;
             }
-            // Retorna o valor fixo para o país selecionado, ou um valor padrão (ex: 0) se não for encontrado
+            
             return FRETE_VALORES[pais] || 0; 
         }
 
@@ -62,12 +62,12 @@ let carrinho = [];
             if (carrinho.length === 0) {
                 listaItens.innerHTML = '<li>O carrinho está vazio.</li>';
                 
-                // Desativa o botão de compra se o carrinho estiver vazio
+                
                 if (btnFinalizarCompra) {
                     btnFinalizarCompra.disabled = true;
                     btnFinalizarCompra.style.opacity = '0.5';
                 }
-                // Garante que o Frete seja 0 quando o carrinho está vazio
+                
                 freteValorDisplay.textContent = 'Frete: R$ 0,00';
             } else {
                 carrinho.forEach(item => {
@@ -84,21 +84,21 @@ let carrinho = [];
                     listaItens.appendChild(li);
                 });
                 
-                // Ativa o botão de compra se houver itens
+                
                 if (btnFinalizarCompra) {
                     btnFinalizarCompra.disabled = false;
                     btnFinalizarCompra.style.opacity = '1';
                 }
                 
-                // Exibe o valor do frete
+                
                 freteValorDisplay.textContent = `Frete: R$ ${valorFrete.toFixed(2).replace('.', ',')}`;
             }
             
-            // Exibe o Total Geral (Itens + Frete)
+            
             valorTotalDisplay.textContent = `R$ ${totalGeral.toFixed(2).replace('.', ',')}`;
         }
 
-        // NOVO: Adiciona listener ao select para atualizar o carrinho quando o país mudar
+        
         selectPais.addEventListener('change', renderizarItensDoCarrinho);
 
 
@@ -111,16 +111,16 @@ let carrinho = [];
             const totalGeral = calcularTotalItens() + getValorFrete(selectPais.value);
             const totalFormatado = totalGeral.toFixed(2).replace('.', ',');
 
-            // 1. Mostrar mensagem de conclusão
+            
             alert(`Compra no valor total de R$ ${totalFormatado} (incluindo frete) concluída com sucesso! Obrigado pela preferência!`);
 
-            // 2. Resetar o carrinho
+            
             carrinho = []; 
 
-            // 3. Atualizar a UI
+            
             fecharModal(); 
             attCarrinho(); 
-            // Garante que a Espanha seja selecionada como padrão ao resetar
+            
             selectPais.value = RESTAURANTE_PAIS; 
         }
 
@@ -180,10 +180,11 @@ let carrinho = [];
             renderizarItensDoCarrinho(); 
         }
 
-        // Adiciona um listener de evento para delegar a remoção
+        
         listaItens.addEventListener('click', (event) => {
             if (event.target.classList.contains('remove-item-btn')) {
                 const nome = event.target.getAttribute('data-nome');
                 removerItemDoCarrinho(nome);
             }
+
         });
